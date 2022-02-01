@@ -1,10 +1,22 @@
+:root {
+    --bright: 85%;
+    --sat: 90%;
+    --background-color: hsl(130, var(--sat), var(--bright));
+}
+
+[data-theme="dark"] {
+    --bright: 20%;
+    --sat: 80%;
+    --background-color: hsl(50, var(--sat), var(--bright));
+}
+
 * {
     box-sizing: border-box;
     font-family: monospace;
 }
 
 html, body{
-    background-color:hsl(256, 80%, 80%);
+    background-color: var(--background-color);
     margin: 0px;
 }
 
@@ -27,9 +39,6 @@ html, body{
     padding-left: 11.11%;
 }
 
-.footer ul{
-}
-
 .main-nav {
     text-align: center;
     border-bottom: 1px solid hsla(0, 0%, 0%, 1);
@@ -37,7 +46,10 @@ html, body{
 
 .main-nav a{
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
+}
+
+.main-nav li{
+    margin: 0 20px;
 }
 
 nav a:hover, nav img:hover, button {
@@ -55,4 +67,18 @@ header {
     background-image: url("images/short.JPG");
     background-position-y: center;
     background-size: cover;
+}
+
+#blueBlock {
+    margin: 0% 0;
+    size: 50%;
+    background-color: hsl(160, var(--sat), var(--bright));
+}
+
+#resume {
+    margin: 0 10%;
+}
+
+header h3, header h1, .main-nav a{
+    color: #fff;
 }
