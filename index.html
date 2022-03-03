@@ -5,44 +5,54 @@
         <meta name="description" content="Mauricio's resume/blog spot.">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
+        <header class="homepage">
             <nav class="nav main-nav">
-                <ul>
-                    <li><a href="test.html">Test Page</a></li>
-                    <li><a href="blog.html">Experiences</a></li>
-                    <li><a href="recurse.html">Recursion</a></li>
-                    <li><a href="#socials">Socials</a></li>
-                </ul>
+                <a href="test.html">Test Page</a>
+                <a href="blog.html">Experiences</a>
+                <a href="recurse.html">Recursion</a>
+                <a href="#socials">Socials</a>
             </nav>
-            <h1 id="first">
-                Welcome to Mauricio's Website!
-            </h1>
-            <h3>
-                This page will serve as a more extensive resume / blog.
-            </h3>
+            <div class="intro-wraper">
+                <h1 class="intro">
+                    Welcome to
+                </h1>
+                <h1 id="NAME" class="intro">
+                    Mauricio's
+                </h1>
+                <h1 class="intro">
+                    Website!
+                </h1>
+                <h3 class="intro">
+                    This page will serve as a more extensive resume / blog.
+                </h3>
+            </div>
         </header>
-        <iframe  class="pdf-viewer" id="resume" src="documents/Curiel_Mauricio_Resume.pdf"></iframe>
+        <iframe  class="pdf-viewer" id="resume" src="documents/darkResume.pdf"></iframe>
+        <!-- <iframe  class="pdf-viewer" id="resume"
+            sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Document, Mauricio Miguel Curiel-Resume on Website" allowfullscreen=""
+            src="https://docs.google.com/document/d/1WM9vmMeHefoPdo1IlmMTOpKRWMS-3HiwIFX9lqCQIAk/preview?authuser=0">
+        </iframe> -->
     </body>
     <footer>
         <nav class="nav footer">
-            <a id="socials"></a>
-            <ul>
-                <!-- TODO: make the images link to my accounts-->
-                <li><a target="_blank" href="https://github.com/Luceium">
-                    <img width=100% src="images/Social Logos/GitHub.png">
-                </a></li>
-                <li><a target="_blank" href="https://instagram.com/developer.mau/">
-                    <img width=100% src="images/Social Logos/Instagram.png">
-                </a></li>
-                <li><a target="_blank" href="https://leetcode.com/SlytherinMau/">
-                    <img width=100% src="images/Social Logos/LeetCode.png">
-                </a></li>
-                <li><a target="_blank" href="https://linkedin.com/in/swemau">
-                    <img width=100% src="images/Social Logos/linkedIn.png">
-                </a></li>
-            </ul>
+            <div id="social-message"> <!-- footer notes-->
+                <h3>Learn More About Me Here:</h3>
+                <H4>stay connected and reach out</H4>
+            </div>
+            <div class="socials-container">
+                <a class="image-link" target="_blank" href="https://github.com/Luceium">
+                    <img class="link" width=100% src="images/Social Logos/github.png">
+                </a>
+                <a class="image-link" target="_blank" href="https://leetcode.com/SlytherinMau/">
+                    <img class="link" width=100% src="images/Social Logos/leetcode.png">
+                </a>
+                <a target="_blank" href="https://linkedin.com/in/swemau">
+                    <img class="link" width=100% src="images/Social Logos/linkedin.png">
+                </a>
+            </div>
         </nav>
     </footer>
 </html>

@@ -1,18 +1,23 @@
 :root {
-    --bright: 85%;
+    /* --bright: 3%;
     --sat: 90%;
-    --background-color: hsl(130, var(--sat), var(--bright));
+    --background-color: hsl(130, var(--sat), var(--bright)); */
+    --background-color: #000;
 }
 
+/*
+does not work yet
 [data-theme="dark"] {
     --bright: 20%;
     --sat: 80%;
     --background-color: hsl(50, var(--sat), var(--bright));
 }
+*/
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: monospace;
+    color: #ccc;
 }
 
 html, body{
@@ -20,78 +25,103 @@ html, body{
     margin: 0px;
 }
 
-#first{
-    text-align: center;
+header {
+    /*
+    background: rgb(3,31,12);
+    background: linear-gradient(90deg, rgba(3,31,12,1) 0%, rgba(9,81,31,1) 38%, rgba(52,216,90,1) 72%, rgba(21,136,79,1) 100%);
+    */
+    background-image: url("images/long.jpg");
+    background-color: #000;
 }
-.nav ul{
+.homepage {
+    height: 100vh;
+}
+
+#NAME {
+    font-size: 6rem;
+}
+
+/* TODO: Margin not working */
+.intro-wrapper {
+    overflow: auto;
+    width: 100%;
+    margin: 10%;
+}
+
+.intro {
     margin: 0;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    margin: 0 25%;
     padding: 1rem 0;
     align-items: center;
     align-self: center;
 }
 
-.nav li{
-    display: inline-block;
-}
-
-.footer li{
-    width: 22.22%;
-    padding-left: 11.11%;
-}
-
-.main-nav {
-    text-align: center;
-    border-bottom: 1px solid hsla(0, 0%, 0%, 1);
-}
-
 .main-nav a{
+    flex: 1;
+    padding: 10px;
     text-decoration: none;
     font-size: larger;
-
 }
 
-.main-nav li{
-    margin: 0 20px;
+.link, .main-nav a{
+    transition: all 0.5s ease-out;
 }
 
-nav a:hover, nav img:hover, button {
-    border-radius: 100%;
-    background-color: hsl(256, 80%, 90%);
+.link:hover, .main-nav a:hover{
+    /* border-radius: 100%; not super relavent now */
+    /* background-color: var(--highlight-color); */
     cursor: pointer;
-    color: black;
-}
-
-footer {
-    border: 0;
-    border-top: 1px solid hsl(0, 0%, 0%); 
-}
-
-.pdf-viewer {
-    height: 100em;
-    width: 80%;
+    font-size: xx-large;
+    margin-top: -1rem;
+    /* color: black; */
 }
 
 header {
     padding: 0%;
-    background-image: url("images/short.JPG");
+    background-image: url("images/homepagePic/sunsets/windmill.JPG");
     background-position-y: center;
     background-size: cover;
-}
-
-#blueBlock {
-    margin: 0% 0;
-    size: 50%;
-    background-color: hsl(160, var(--sat), var(--bright));
-}
-
-#resume {
-    margin: 0 10%;
 }
 
 header h3, header h1, .main-nav a{
     color: #fff;
 }
 
+.pdf-viewer {
+    height: 100em;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#social-message {
+    text-align: center;
+    width: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.socials-container {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+/*niched*/
 #recurse {
     background-color: aqua;
     border-color: black;
