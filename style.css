@@ -26,30 +26,18 @@ html, body{
 }
 
 header {
-    /*
-    background: rgb(3,31,12);
-    background: linear-gradient(90deg, rgba(3,31,12,1) 0%, rgba(9,81,31,1) 38%, rgba(52,216,90,1) 72%, rgba(21,136,79,1) 100%);
-    */
-    background-image: url("images/long.jpg");
-    background-color: #000;
+    padding: 0%;
+    background-image: url("images/homepagePic/sunsets/windmill.JPG");
+    background-position-y: center;
+    background-size: cover;
 }
+
+header h3, header h1, .main-nav a{
+    color: #fff;
+}
+
 .homepage {
     height: 100vh;
-}
-
-#NAME {
-    font-size: 6rem;
-}
-
-/* TODO: Margin not working */
-.intro-wrapper {
-    overflow: auto;
-    width: 100%;
-    margin: 10%;
-}
-
-.intro {
-    margin: 0;
 }
 
 .main-nav{
@@ -71,6 +59,8 @@ header {
 }
 
 .link, .main-nav a{
+    width: 100%;
+    height: auto;
     transition: all 0.5s ease-out;
 }
 
@@ -83,15 +73,19 @@ header {
     /* color: black; */
 }
 
-header {
-    padding: 0%;
-    background-image: url("images/homepagePic/sunsets/windmill.JPG");
-    background-position-y: center;
-    background-size: cover;
+#NAME {
+    font-size: 6rem;
 }
 
-header h3, header h1, .main-nav a{
-    color: #fff;
+/* TODO: Margin not working */
+.intro-wrapper {
+    overflow: auto;
+    width: 100%;
+    margin: 10%;
+}
+
+.intro {
+    margin: 0;
 }
 
 .pdf-viewer {
@@ -117,7 +111,7 @@ header h3, header h1, .main-nav a{
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-basis: 30%;
 }
 
