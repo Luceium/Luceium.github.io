@@ -35,7 +35,7 @@ header {
     background-attachment: fixed;
 }
 
-header::after {
+#homepage::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -49,7 +49,7 @@ body {
     padding: 0 10%;
 }
 
-.homepage {
+#homepage {
     height: 100vh;
 }
 
@@ -113,7 +113,7 @@ a::before {
     margin: 0;
 }
 
-div.projects-container {
+.projects-container {
     display: grid;
     gap: 5%;
     grid-template-columns: repeat(4, 1fr);
@@ -125,10 +125,40 @@ div.projects-container {
 div.projects-container > div {
     display: flex;
     flex-direction: column;
+    font-size: x-large;
 }
 
-div.projects-container ul {
+div.projects-container > div > a > img {
+    width: 100%;
+}
+
+div.projects-container h3, div.projects-container p {
+    margin: 0;
+}
+
+div.projects-container > div > ul {padding: 0;}
+
+div.projects-container > div > ul > li {
     display: inline;
+}
+
+.tag {
+    border: #ccc 5px;
+    padding: 0.25em;
+    margin: 0 5px;
+    border-radius: 1em;
+}
+
+.lang {
+    background-color: midnightblue;
+}
+
+.lib {
+    background-color: darkgreen;
+}
+
+div.projects-container > div > ul > li > a {
+    text-decoration: none;
 }
 
 .test::before {
