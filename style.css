@@ -21,7 +21,7 @@ does not work yet
     color: #ccc;
 }
 
-html, body{
+body {
     background-color: var(--background-color);
     overflow-x: hidden;
     margin: 0;
@@ -44,7 +44,7 @@ header {
     background: linear-gradient(to top, black, transparent);
 }
 
-body {
+main {
     width: 80%;
     padding: 0 10%;
 }
@@ -130,6 +130,7 @@ div.projects-container > div {
 
 div.projects-container > div > a > img {
     width: 100%;
+    border-radius: 5%;
 }
 
 div.projects-container h3, div.projects-container p {

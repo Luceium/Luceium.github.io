@@ -15,39 +15,42 @@
             }
         </style>
     </head>
-    <header>
-        <nav class="nav main-nav">
-            <a href="../index.html" class="link">Home</a>
-            <a href="../3dLand.html" class="link"> Metaverse</a>
-            <a href="../test.html" class="link">Test Page</a>
-            <a href="../blog.html" class="link">Experiences</a>
-        </nav>
-    </header>
+    
     <body>
-        <iframe src="recursive-pointer.html" 
-            frameborder="0" 
-            id="recurse"
-            scrolling="no"
-        ></iframe>
-        <h1>2/24/22</h1>
-        <p>
-            I have unfortunately discovered that recursion by use of iframe has been patched because it used to be an issue that caused browsers to crash.
-            I was excited to do recursion the second I learned about how iframe works.
-            So, I tried to implement recursion by having two pages that point at eachother but that didn't seem to work.
-            I later learned that iframe prevents recursion by checking to see if it's self is among the list of parent pages so to speak.
-            All in all it was pretty fun and cool to learn about this history and how developers "patched" it.
-        </p>
-        <h1>3/5/2022</h1>
-        <p>
-            I decided to update my display to show two iframes pointing at eachother 
-            from seprate files. I also made this page not be included in the recursion 
-            to avoid the blog being seen twice. The final touches were some colors 
-            and text to seperate them using a costume CSS file. While this all sounds great 
-            it is important to note that I spent hours debugging because on this page 
-            I used href instead of src in the iframe declaration. As a novice, self learning developer 
-            I used the two terms interchangably. Now I will remember that src is something to load 
-            while an href is a link to take you somewhere. I made this connection by 
-            comparing and contrasting img and a tags.
-        </p>
+        <header>
+            <nav class="nav main-nav">
+                <a href="../index.html" class="link">Home</a>
+                <a href="../3dLand.html" class="link"> Metaverse</a>
+                <a href="../test.html" class="link">Test Page</a>
+                <a href="../blog.html" class="link">Experiences</a>
+            </nav>
+        </header>
+        <main>
+            <iframe src="recursive-pointer.html"
+                frameborder="0"
+                id="recurse"
+                scrolling="no"
+            ></iframe>
+            <h1>2/24/22</h1>
+            <p>
+                I have unfortunately discovered that recursion by use of iframe has been patched because it used to be an issue that caused browsers to crash.
+                I was excited to do recursion the second I learned about how iframe works.
+                So, I tried to implement recursion by having two pages that point at eachother but that didn't seem to work.
+                I later learned that iframe prevents recursion by checking to see if it's self is among the list of parent pages so to speak.
+                All in all it was pretty fun and cool to learn about this history and how developers "patched" it.
+            </p>
+            <h1>3/5/2022</h1>
+            <p>
+                I decided to update my display to show two iframes pointing at eachother
+                from seprate files. I also made this page not be included in the recursion
+                to avoid the blog being seen twice. The final touches were some colors
+                and text to seperate them using a costume CSS file. While this all sounds great
+                it is important to note that I spent hours debugging because on this page
+                I used href instead of src in the iframe declaration. As a novice, self learning developer
+                I used the two terms interchangably. Now I will remember that src is something to load
+                while an href is a link to take you somewhere. I made this connection by
+                comparing and contrasting img and a tags.
+            </p>
+        </main>
     </body>
 </html>
