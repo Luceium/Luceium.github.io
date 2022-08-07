@@ -141,13 +141,14 @@ div.projects-container h3, div.projects-container p {
 div.projects-container > div > ul {padding: 0;}
 
 div.projects-container > div > ul > li {
+    line-height: 20px;
     display: inline;
 }
 
 .tag {
     border: #ccc 5px;
     padding: 0.25em;
-    margin: 0 5px;
+    margin: 0 5px 20px 5px;
     border-radius: 1em;
 }
 
@@ -157,6 +158,10 @@ div.projects-container > div > ul > li {
 
 .lib {
     background-color: darkgreen;
+}
+
+.api {
+    background-color: coral;
 }
 
 div.projects-container > div > ul > li > a {
