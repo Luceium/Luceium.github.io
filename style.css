@@ -141,7 +141,6 @@ div.projects-container h3, div.projects-container p {
 div.projects-container > div > ul {padding: 0;}
 
 div.projects-container > div > ul > li {
-    line-height: 20px;
     display: inline;
 }
 
@@ -161,7 +160,7 @@ div.projects-container > div > ul > li {
 }
 
 .api {
-    background-color: coral;
+    background-color: brown;
 }
 
 div.projects-container > div > ul > li > a {
