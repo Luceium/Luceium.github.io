@@ -132,6 +132,7 @@ div.projects-container > div > a > img {
     width: 250px;
     height: 250px;
     border-radius: 5%;
+    object-fit: cover;
 }
 
 div.projects-container h3, div.projects-container p {
