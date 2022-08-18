@@ -90,7 +90,7 @@ a::before {
 }
 
 .link:hover{
-    /* border-radius: 100%; not super relavent now */
+    /* border-radius: 100%; not super relevant now */
     /* background-color: var(--highlight-color); */
     cursor: pointer;
     font-size: xx-large;
@@ -105,7 +105,7 @@ a::before {
     flex-direction: column;
 }
 
-.intro-wraper{
+.intro-wrapper{
     padding-top: 6rem;
 }
 
@@ -170,10 +170,15 @@ img {
     display: inline;
 }
 
+.tag-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
 .tag {
     border: #ccc 5px;
     padding: 0.25em;
-    margin: 0 5px 20px 5px;
+    margin: 0.25em;
     border-radius: 1em;
 }
 
