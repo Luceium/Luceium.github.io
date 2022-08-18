@@ -21,6 +21,28 @@ does not work yet
     color: #ccc;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+* {
+    scrollbar-width: none;
+    scrollbar-color: #464347 transparent;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #464347;
+    border-radius: 7px;
+    border: 0px none transparent;
+}
+
 body {
     background-color: var(--background-color);
     overflow-x: hidden;
@@ -141,11 +163,11 @@ a::before {
     border-radius: 20px;
     background: #cccccc;
     display: flex;
-    justify-content: center;
 }
   
 img {
     height: 100%;
+    width: 100%;
     border-radius: 10px;
 }
   
@@ -155,9 +177,14 @@ img {
     background: #323639;
     box-sizing: border-box;
     padding: 10%;
+    font-size: x-large;
     word-wrap: anywhere;
-    overflow-y: scroll;
+    overflow-y: auto;
     transform: rotateY(180deg);
+}
+
+.flipper-back a {
+    cursor: help;
 }
   
 .flipper-card.flipper-is-flipped {
