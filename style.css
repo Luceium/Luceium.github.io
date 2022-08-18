@@ -165,10 +165,11 @@ a::before {
     display: flex;
 }
   
-img {
+.flipper-front img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    pointer-events: none;
 }
   
 .flipper-back {
