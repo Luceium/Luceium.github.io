@@ -126,6 +126,10 @@ a::before {
     position: relative;
     perspective: 800px;
 }
+
+.flipper:hover {
+    cursor: pointer;
+}
   
 .flipper-card {
     width: 100%;
@@ -152,7 +156,9 @@ img {
 }
   
 .flipper-back {
-    background: #eeeeee;
+    display:flex;
+    flex-direction: column;
+    background: #323639;
     box-sizing: border-box;
     padding: 10%;
     word-wrap: anywhere;
@@ -164,9 +170,9 @@ img {
     transform: rotateY(180deg);
 }
 
-div.projects-container > div > ul {padding: 0;}
+.projects-container  ul {padding: 0;}
 
-div.projects-container > div > ul > li {
+.projects-container  li {
     display: inline;
 }
 

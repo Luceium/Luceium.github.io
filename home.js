@@ -1,5 +1,3 @@
-$(document).ready(function() {
-    $('.flipper').on('click', function () {
-      $(this).find('.flipper-card').toggleClass('flipper-is-flipped');
-    });
-  });
+document.querySelector('.flipper').addEventListener('click', event => {
+    this.querySelector('.flipper-card').toggleClass('flipper-is-flipped');
+})
