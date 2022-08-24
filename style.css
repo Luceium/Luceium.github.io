@@ -1,22 +1,8 @@
 :root {
-    /* --bright: 3%;
-    --sat: 90%;
-    --background-color: hsl(130, var(--sat), var(--bright)); */
     --background-color: #000;
-    counter-reset: nav-links;
 }
-
-/*
-does not work yet
-[data-theme="dark"] {
-    --bright: 20%;
-    --sat: 80%;
-    --background-color: hsl(50, var(--sat), var(--bright));
-}
-*/
 
 * {
-    /* box-sizing: border-box; */
     font-family: monospace;
     color: #ccc;
 }
@@ -112,12 +98,9 @@ a::before {
 }
 
 .link:hover{
-    /* border-radius: 100%; not super relevant now */
-    /* background-color: var(--highlight-color); */
     cursor: pointer;
     font-size: xx-large;
     margin-top: -1rem;
-    /* color: black; */
 }
 
 .center-flex{
