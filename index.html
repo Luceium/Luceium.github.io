@@ -36,14 +36,14 @@
             </div>
         </header>
         <a id="projects"></a>
-        <h1>Projects</h2>
+        <h1 id="project" class="nav-section-title">Projects</h2>
         <div class="project-container">
             <div class="flipper-card">
                 <div class="flipper-front">
                     <img src="images/projectsThumbnail/tripBud.png">
                 </div>
                 <div class="flipper-back">
-                    <h3><a href="https://summer22-sps-36.appspot.com/" rel="noopener noreferrer" target="_blank">
+                    <h3><a href="https://trip-bud-363500.uc.r.appspot.com/" rel="noopener noreferrer" target="_blank">
                         TripBud
                     </a></h3>
                     <p>
@@ -113,6 +113,36 @@
                         <a  class="tag lang">html/css</a>
                         <a  class="tag lib">node.js</a>
                         <a  class="tag api">google translate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flipper-card">
+                <div class="flipper-front">
+                    <img src="images/projectsThumbnail/ambiair.jpg">
+                </div>
+                <div class="flipper-back">
+                    <h3><a href="" rel="noopener noreferrer" target="_blank" style="pointer-events: none;">
+                        Ambi~Air
+                    </a></h3>
+                    <p>
+                        An android app to help you save electricity, save the environment, and save your wallet! 
+                        Ambi~Air is a project I built in highschool for my AP Computer Science A class final. 
+                        This was my first project with Android, Firebase, Python or a RaspberryPi. 
+                        It was built in 2 weeks and was a fun project. 
+                        The RaspberryPi served as a weather station gathering weather data with an API and a temperature sensor.
+                        It sent the data to firebase using Python. The temperature however, was flawed.
+                        The RainbowHat's temperature sensor was directly above the CPU.
+                        I used a simple thermal transfer equation to estimate the added temperature, based on the temperature and distance of the CPU.
+                        On the other end, the Android phone running the app will see live updated temperatures obtained from Firebase.
+                        The app also does data manipulation to return a custom instruction alerting the user to open, or close windows when it would help the user get closer to their desired home temperature without using an AC or a heater.
+                    </p>
+                    <div class="tag-container">
+                        <a class="tag lang">python</a>
+                        <a class="tag lang">java</a>
+                        <a class="tag lib">RainbowHat</a>
+                        <a class="tag misc">Android</a>
+                        <a class="tag api">Open Weather</a>
                     </div>
                 </div>
             </div>

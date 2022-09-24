@@ -4,7 +4,6 @@
 
 * {
     font-family: monospace;
-    color: #ccc;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -31,16 +30,18 @@
 
 body {
     background-color: var(--background-color);
+    color:aliceblue;
     overflow-x: hidden;
     margin: 0;
 }
 
 header {
     padding: 0%;
-    background-image: url("images/homepagePic/astronomicalMorning.JPG");
+    background-image: url("images/homepagePic/rollingWaves.jpg");
     background-position-y: center;
     background-size: cover;
     background-attachment: fixed;
+    color: rgb(8, 22, 102);
 }
 
 #homepage::after {
@@ -112,11 +113,15 @@ a::before {
 
 .intro-wrapper{
     padding-top: 6rem;
-    color: rgb(8, 22, 102) !important;
 }
 
 .intro {
     margin: 0;
+}
+
+.nav-section-title {
+    font-size: xxx-large;
+    margin: 2.42vw;
 }
 
 .project-container {
@@ -169,6 +174,7 @@ a::before {
 }
 
 .flipper-back a {
+    color: white;
     cursor: help;
 }
   
@@ -204,6 +210,10 @@ a::before {
 
 .api {
     background-color: brown;
+}
+
+.misc {
+    background-color: pink;
 }
 
 div.projects-container > div > ul > li > a {
